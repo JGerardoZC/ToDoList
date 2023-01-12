@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>To Do List</title>
+</head>
+<body>
+
+    <h1>To Do List</h1>
+    <input id="newItem" type="text" placeholder="Escribe tu tarea">
+    <button onclick="AddItem()">Anadir Tarea</button>
+
+    <ul id="list">
+        <li onclick="StatusItem(event)" id="done" class="done">Limpiar estufa</li>
+        <li onclick="StatusItem(event)" id="done" class="done">Ordenar mi cuarto</li>
+        <li onclick="StatusItem(event)" id="new" class="new">Ir al gimnasio</li>
+        <li onclick="StatusItem(event)" id="new" class="new">Comprar jamon</li>
+    </ul>
+
+    <style>
+        .new {
+            color: green;
+        }
+
+        .done {
+            color: grey;
+            text-decoration: line-through;
+        }
+    </style>
+
+</body>
+</html>
